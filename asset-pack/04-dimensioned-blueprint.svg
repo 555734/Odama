@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-label="大玉レースの3Dモデリング基準図。ボール、直線、カーブ、起伏、ゲートの寸法図">
+  <defs>
+    <style>
+      .bg{fill:#f7f5f0}.panel{fill:#fff;stroke:#ddd9d1;stroke-width:2}.title{font:700 38px 'Yu Gothic',Meiryo,sans-serif;fill:#19386d}.head{font:700 25px 'Yu Gothic',Meiryo,sans-serif;fill:#19386d}.body{font:19px 'Yu Gothic',Meiryo,sans-serif;fill:#35465c}.small{font:16px 'Yu Gothic',Meiryo,sans-serif;fill:#516074}.dim{stroke:#19386d;stroke-width:2;marker-start:url(#arr);marker-end:url(#arr)}.guide{stroke:#8c9baa;stroke-width:1.5;stroke-dasharray:6 6}.outline{stroke:#19386d;stroke-width:3}.track{fill:#f27a80}.edge{fill:none;stroke:#f7e7ce;stroke-width:10}.blue{fill:#245bc4}.cream{fill:#f4e5ce}.yellow{fill:#ffbf39}.red{fill:#f12d30}
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M10 0 0 5 10 10" fill="none" stroke="#19386d" stroke-width="1.5"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="1120"/>
+  <text x="42" y="55" class="title">大玉レース｜3D モデリング基準図</text>
+  <text x="44" y="87" class="body">単位 m　｜　+X = 進行方向　+Y = 左　+Z = 上　｜　図は寸法・接続条件の基準</text>
+
+  <rect class="panel" x="32" y="110" width="490" height="420" rx="18"/>
+  <text x="56" y="151" class="head">01　レーシングボール</text>
+  <circle cx="275" cy="303" r="115" class="cream outline"/>
+  <path d="M184 235 Q250 190 346 218 L321 250 Q266 232 210 270Z" class="red"/>
+  <path d="M194 342 Q265 297 350 349 Q310 392 217 372Z" class="blue"/>
+  <line x1="160" y1="441" x2="390" y2="441" class="dim"/>
+  <line x1="160" y1="418" x2="160" y2="455" class="guide"/>
+  <line x1="390" y1="418" x2="390" y2="455" class="guide"/>
+  <text x="220" y="475" class="body">直径 Ø2.0</text>
+  <text x="57" y="507" class="small">A–D 共通の真球・中心原点・球コリジョン</text>
+
+  <rect class="panel" x="538" y="110" width="1030" height="420" rx="18"/>
+  <text x="562" y="151" class="head">02　TRK_01 直線｜上面図と断面</text>
+  <rect x="660" y="204" width="480" height="240" rx="4" class="track outline"/>
+  <path d="M666 220 H1134 M666 428 H1134" class="edge"/>
+  <line x1="660" y1="185" x2="1140" y2="185" class="dim"/>
+  <text x="855" y="176" class="body">全長 12.0</text>
+  <line x1="628" y1="204" x2="628" y2="444" class="dim"/>
+  <text x="560" y="330" class="body">幅 8.0</text>
+  <line x1="677" y1="324" x2="1118" y2="324" stroke="#f9d9d4" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="799" y="317" class="body">+X 進行方向</text>
+  <text x="1200" y="224" class="small">共通断面</text>
+  <rect x="1180" y="275" width="272" height="42" class="blue outline"/>
+  <rect x="1180" y="265" width="272" height="13" class="track"/>
+  <rect x="1172" y="247" width="16" height="30" rx="7" class="cream outline"/>
+  <rect x="1444" y="247" width="16" height="30" rx="7" class="cream outline"/>
+  <text x="1190" y="359" class="small">床厚 0.45</text>
+  <text x="1190" y="384" class="small">縁石 0.35 × 0.25</text>
+  <text x="1190" y="409" class="small">接続端は全モジュール共通</text>
+  <text x="657" y="480" class="small">上面は 12:8 の比率で図示。接続面に段差・突起を作らない。</text>
+
+  <rect class="panel" x="32" y="546" width="755" height="520" rx="18"/>
+  <text x="56" y="587" class="head">03　TRK_02 90°左カーブ｜上面図</text>
+  <path d="M317 639 A220 220 0 0 1 537 859 L427 859 A110 110 0 0 0 317 749 Z" class="track outline"/>
+  <path d="M320 650 A210 210 0 0 1 526 856 M320 738 A120 120 0 0 1 438 856" class="edge"/>
+  <circle cx="317" cy="859" r="5" class="blue"/>
+  <line x1="317" y1="859" x2="537" y2="859" class="guide"/>
+  <line x1="317" y1="859" x2="317" y2="639" class="guide"/>
+  <text x="94" y="705" class="body">外半径 16</text>
+  <text x="92" y="734" class="body">内半径 8</text>
+  <text x="546" y="829" class="body">幅 8</text>
+  <line x1="432" y1="895" x2="537" y2="895" class="dim"/>
+  <text x="449" y="927" class="small">出口接続</text>
+  <text x="72" y="974" class="body">中心線半径 12　｜　外側へ最大 12° バンク</text>
+  <text x="72" y="1006" class="small">左カーブを反転すると右カーブ。入口・出口は同じ 8 m 幅。</text>
+
+  <rect class="panel" x="803" y="546" width="765" height="520" rx="18"/>
+  <text x="827" y="587" class="head">04　TRK_03 起伏｜側面図</text>
+  <path d="M855 753 C970 753 970 659 1077 659 C1184 659 1184 753 1299 753 L1299 782 L855 782Z" class="track outline"/>
+  <line x1="855" y1="808" x2="1299" y2="808" class="dim"/>
+  <text x="1034" y="838" class="body">12.0</text>
+  <line x1="1320" y1="753" x2="1320" y2="659" class="dim"/>
+  <text x="1330" y="715" class="small">+1.0</text>
+  <text x="850" y="861" class="small">端部 z=0・傾斜=0　｜　z(x)=0.5[1−cos(2πx/12)]</text>
+  <line x1="827" y1="887" x2="1540" y2="887" stroke="#ddd9d1" stroke-width="2"/>
+  <text x="827" y="923" class="head">05　TRK_04 ゴールゲート｜正面図</text>
+  <rect x="930" y="958" width="390" height="20" class="track outline"/>
+  <path d="M953 958 V934 Q953 900 1012 900 H1238 Q1297 900 1297 934 V958 H1264 V936 Q1264 930 1238 930 H1012 Q986 930 986 936 V958Z" class="blue outline"/>
+  <path d="M986 934 H1264" stroke="#f4e5ce" stroke-width="12" stroke-dasharray="24 24"/>
+  <text x="1314" y="944" class="small">内法高 4.0</text>
+  <text x="1018" y="1009" class="small">内法幅 9.0　｜　柱断面 約 0.7</text>
+
+  <text x="42" y="1097" class="small">造形資料: 01-balls-turnaround.png / 02-track-modules.png / 03-environment-props.png　　寸法基準: この図と README.md</text>
+</svg>

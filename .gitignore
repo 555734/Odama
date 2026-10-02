@@ -1,0 +1,7 @@
+/.tools/
+/game/.godot/
+/game/build/
+*.tmp
+*.log
+/Odama-asset-pack-v1.zip
+/image-board-ball-racing.png
